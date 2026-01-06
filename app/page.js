@@ -58,7 +58,7 @@ export default async function Home(){
           <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-6 py-2 rounded-full text-sm font-medium mb-6"> Made with ❤️ by Samarth</div>
           <h2 className="text-5xl font-bold text-gray-900 mb-4 tracking-tight">Never Miss a Price Drop</h2>
 
-          <p className="text-xl tex-gray-600 mb-12 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
             Track prices from any e-commerce site. Get instant alerts when prices drop. Save money effortlessly.
           </p>
 
@@ -94,7 +94,7 @@ export default async function Home(){
             </h3>
 
             <span className="text-sm text-gray-500">
-              {products.length}{products.length === 1 ? "products" : "products"}
+              {products.length}{products.length === 1 ? "product" : "products"}
             </span>
           </div>
 

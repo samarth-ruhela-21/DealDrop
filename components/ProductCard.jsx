@@ -3,10 +3,12 @@
 import { deleteProduct } from '@/app/actions';
 import React, { useState } from 'react'
 import { Card,CardHeader, CardFooter, CardContent } from './ui/card';
-import { Badge, ChevronDown, ChevronUp, ExternalLink, Trash, TrendingDown } from 'lucide-react';
+import { ChevronDown, ChevronUp, ExternalLink, Trash, TrendingDown } from 'lucide-react';
 import { Button } from './ui/button';
 import Link from 'next/link';
 import PriceChart from './PriceChart';
+import { toast } from 'sonner';
+import { Badge } from './ui/badge';
 
 
 const ProductCard = ({product}) => {
@@ -48,7 +50,7 @@ const ProductCard = ({product}) => {
 
                         <div className='flex items-baseline gap-2'>
                             <span className='text-3xl font-bold text-orange-500'>
-                                {product.currency}{product.current_price}
+                                {product.currency}: {product.current_price}
                             </span>
 
                             <Badge variant="secondary" className='gap-1'>
